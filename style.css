@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#addButton {
+    background-color: #667eea;
+    color: white;
+    padding: 12px 18px;
+}
+
+#addButton:hover {
+    background-color: #5568d9;
+}
+
+ul {
+    padding: 0;
+    margin-top: 25px;
+}
+
+li {
+    list-style: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+}
+
+li button:last-of-type {
+    background-color: #f44336;
+    color: white;
+}
+
+li button:hover {
+    opacity: 0.8;
+}
+#taskCounter {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+}
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+button {
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+#clearButton {
+    display: block;
+    margin: 15px auto 0;
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+#clearButton:hover {
+    background-color: #d32f2f;
+}
+@media (max-width: 500px) {
+    .todo-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    #addButton {
+        width: 100%;
+    }
+
+    li {
+        flex-wrap: wrap;
+    }
+
+    li button {
+        padding: 6px 8px;
+    }
+}
+.priority {
+    font-weight: bold;
+}
+
+.priority.High {
+    color: #e53935;
+}
+
+.priority.Medium {
+    color: #f9a825;
+}
+
+.priority.Low {
+    color: #43a047;
+}
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+li span:first-child {
+    flex: 1;
+}
+
+li button {
+    white-space: nowrap;
+}
+
+li small {
+    color: #777;
+    font-size: 12px;
+}
